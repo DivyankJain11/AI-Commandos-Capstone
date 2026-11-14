@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.streamlit/secrets.toml
+
+# Rebuilt locally. Metrics, the loss log, and the small LoRA adapter are kept.
+artifacts/chroma/
+artifacts/embeddings.npy
+artifacts/lora_runs/
+
+# Model caches if a tool writes them inside the project
+.cache/
+*.tmp

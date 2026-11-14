@@ -1,0 +1,322 @@
+[
+  {
+    "chunk_id": "CL-01",
+    "clause_id": "CL-01",
+    "title": "Intimation",
+    "text": "A planned health admission must be intimated at least 48 hours before admission. An emergency health admission must be intimated within 24 hours after admission. A motor accident must be intimated within 48 hours. Theft of the vehicle must be intimated within 24 hours of discovery.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-02",
+    "clause_id": "CL-02",
+    "title": "Cashless approval",
+    "text": "Cashless treatment is available only at a network hospital. A pre-authorisation request must include the claim form, photo identity, the policy number, and the hospital clinical notes. Approval authorises the hospital. It is not a promise that every line item is payable.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-03",
+    "clause_id": "CL-03",
+    "title": "Reimbursement documents",
+    "text": "A reimbursement health claim requires the claim form, the discharge summary, the original itemised bills, the investigation reports, a cancelled cheque, and identity proof. A motor Own Damage claim also requires a copy of the registration certificate, the driving licence, and an FIR when the loss is a theft or involves a third party.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-04",
+    "clause_id": "CL-04",
+    "title": "Motor survey",
+    "text": "A motor surveyor is appointed when the estimated Own Damage loss exceeds Rs 50,000. The insured must make the vehicle available for survey before repairs begin, except for minor work needed to move the vehicle to safety.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-05",
+    "clause_id": "CL-05",
+    "title": "Settlement time",
+    "text": "After the last required document is received, the company offers a settlement or a rejection with reasons within 15 working days for a health claim and within 21 working days for a motor claim.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-06",
+    "clause_id": "CL-06",
+    "title": "When a claim can be rejected",
+    "text": "A claim may be rejected when it falls under an exclusion, when a waiting period is not complete, when a material fact was withheld at proposal, or when the requested documents are not submitted within 30 days of the request and there is no acceptable reason for the delay.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-07",
+    "clause_id": "CL-07",
+    "title": "Grievance",
+    "text": "A complaint is first raised with the Grievance Redressal Officer. If it is still unresolved after 15 days, the insured may approach the Insurance Ombudsman for that jurisdiction. An Ombudsman complaint must be filed within one year of the rejection.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "CL-08",
+    "clause_id": "CL-08",
+    "title": "Fraud",
+    "text": "When a claim is supported by a forged document or by a material false statement, the claim is forfeited and the policy may be cancelled. Premium is not refunded when fraud is proved.",
+    "product": "Claims",
+    "source": "claims_servicing.md"
+  },
+  {
+    "chunk_id": "EX-01",
+    "clause_id": "EX-01",
+    "title": "Adventure sports",
+    "text": "Treatment of injuries from adventure sports, including mountaineering, paragliding, and motor racing, is excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-02",
+    "clause_id": "EX-02",
+    "title": "Cosmetic surgery",
+    "text": "Cosmetic or aesthetic surgery is excluded. Reconstructive surgery required after an accident that is otherwise admissible is not excluded by this clause.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-03",
+    "clause_id": "EX-03",
+    "title": "Dental treatment",
+    "text": "Dental treatment is excluded. Treatment required because of an accidental injury to natural teeth during the policy period is not excluded by this clause.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-04",
+    "clause_id": "EX-04",
+    "title": "Obesity",
+    "text": "Treatment of obesity, weight-control surgery, and complications arising primarily from obesity are excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-05",
+    "clause_id": "EX-05",
+    "title": "Infertility",
+    "text": "Infertility treatment, IVF, and reversal of sterilisation are excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-06",
+    "clause_id": "EX-06",
+    "title": "War and nuclear risk",
+    "text": "Injury or illness arising from war, invasion, or nuclear contamination is excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-07",
+    "clause_id": "EX-07",
+    "title": "Unproven treatment",
+    "text": "Treatments that are unproven or experimental, or that are not recognised by standard medical practice in India, are excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "EX-08",
+    "clause_id": "EX-08",
+    "title": "Self-inflicted injury",
+    "text": "Treatment of a self-inflicted injury and treatment following an attempted suicide are excluded.",
+    "product": "Health",
+    "source": "health_exclusions.md"
+  },
+  {
+    "chunk_id": "HP-01",
+    "clause_id": "HP-01",
+    "title": "Sum insured",
+    "text": "The Sum Insured is the annual limit shown on the schedule. All admissible claims in a policy year are paid up to the Sum Insured. A recharge of 100 percent of the Sum Insured is available once per policy year after the Sum Insured is exhausted, and the recharge applies only to a subsequent illness.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-02",
+    "clause_id": "HP-02",
+    "title": "Initial waiting period",
+    "text": "Expenses for an illness are not payable during the first 30 days from policy inception. Treatment of accidental injuries is covered from day one. This initial waiting period does not apply on renewal when the policy is renewed without a break.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-03",
+    "clause_id": "HP-03",
+    "title": "Pre-existing disease",
+    "text": "Pre-existing diseases and their direct complications are covered only after 36 continuous months of coverage. A pre-existing disease means a condition that was diagnosed or treated during the 36 months before the first policy start date.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-04",
+    "clause_id": "HP-04",
+    "title": "Specific disease waiting period",
+    "text": "Cataract, hernia, joint replacement, and sinusitis are covered only after 24 continuous months. Claims for these conditions before 24 months are not payable.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-05",
+    "clause_id": "HP-05",
+    "title": "Co-pay",
+    "text": "A 10 percent co-pay applies to each admissible claim when the insured person is 61 years or older on the date of admission. Co-pay is waived for accidental injury claims.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-06",
+    "clause_id": "HP-06",
+    "title": "Room rent",
+    "text": "Room rent is limited to 1 percent of the Sum Insured per day for a normal room and 2 percent of the Sum Insured per day for an intensive care unit. Related expenses are reduced in the same proportion if a higher room category is chosen.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-07",
+    "clause_id": "HP-07",
+    "title": "Day care",
+    "text": "Listed day-care procedures are covered even when the hospital stay is less than 24 hours. The procedure must appear on the day-care list attached to the policy.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-08",
+    "clause_id": "HP-08",
+    "title": "Maternity",
+    "text": "Maternity expenses are covered only when the maternity add-on is selected and only after a waiting period of 36 months from the add-on start date. The sub-limit is Rs 50,000 for a normal delivery and Rs 75,000 for a caesarean section. Newborn cover is limited to the first 90 days and sits inside that sub-limit.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-09",
+    "clause_id": "HP-09",
+    "title": "Ambulance",
+    "text": "Road ambulance charges are payable up to Rs 2,000 per hospitalisation when the admission itself is an admissible claim.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-10",
+    "clause_id": "HP-10",
+    "title": "AYUSH",
+    "text": "In-patient treatment in a registered Ayurveda, Yoga, Unani, Siddha, or Homeopathy hospital is covered up to the Sum Insured. Outpatient AYUSH consultations are not covered.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-11",
+    "clause_id": "HP-11",
+    "title": "Domiciliary treatment",
+    "text": "Home treatment is covered only when the attending doctor certifies that the patient cannot be moved to a hospital, or when no hospital bed is available. Domiciliary treatment is capped at 10 percent of the Sum Insured. Pre-hospitalisation and post-hospitalisation expenses are not paid under domiciliary treatment.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "HP-12",
+    "clause_id": "HP-12",
+    "title": "Geography",
+    "text": "Treatment is covered only in India. Emergency hospitalisation outside India is not covered under this product.",
+    "product": "Health",
+    "source": "health_protect.md"
+  },
+  {
+    "chunk_id": "MC-01",
+    "clause_id": "MC-01",
+    "title": "Own damage",
+    "text": "Own Damage cover pays for accidental loss or damage to the insured car, subject to the deductible and to depreciation, up to the Insured Declared Value.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-02",
+    "clause_id": "MC-02",
+    "title": "Insured declared value",
+    "text": "The Insured Declared Value is the current market value of the car agreed at inception. It is the maximum payable on a total loss or a theft claim.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-03",
+    "clause_id": "MC-03",
+    "title": "Compulsory deductible",
+    "text": "A compulsory deductible of Rs 1,000 applies to each Own Damage claim for a car up to 1500cc. A compulsory deductible of Rs 2,000 applies to each Own Damage claim for a car above 1500cc.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-04",
+    "clause_id": "MC-04",
+    "title": "Third party",
+    "text": "Third-party property damage is covered up to Rs 7,50,000 per accident. Third-party bodily injury is covered as required by the Motor Vehicles Act, and this wording states no separate policy sub-limit for that bodily injury.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-05",
+    "clause_id": "MC-05",
+    "title": "No claim bonus",
+    "text": "No Claim Bonus on the Own Damage premium is 20 percent after one claim-free year, 25 percent after two, 35 percent after three, 45 percent after four, and 50 percent after five or more claim-free years. An Own Damage claim reduces the bonus to zero at the next renewal. A third-party-only claim does not reduce No Claim Bonus.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-06",
+    "clause_id": "MC-06",
+    "title": "Metal depreciation",
+    "text": "For a partial loss, depreciation on metal parts is nil during the first 6 months, 5 percent after 6 months up to 1 year, 10 percent after 1 year up to 2 years, and 15 percent after 2 years up to 3 years.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-07",
+    "clause_id": "MC-07",
+    "title": "Plastic glass and tyres depreciation",
+    "text": "Rubber, nylon, plastic parts, and tyres that are replaced are subject to 50 percent depreciation. Glass is subject to nil depreciation.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-08",
+    "clause_id": "MC-08",
+    "title": "Tyre only damage",
+    "text": "Damage to tyres and tubes is not covered unless the car also suffers other accidental damage in the same event and an Own Damage claim is payable for that other damage.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-09",
+    "clause_id": "MC-09",
+    "title": "Consumables",
+    "text": "Engine oil, lubricants, nuts and bolts, and similar consumables are not covered unless the consumable add-on has been purchased.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-10",
+    "clause_id": "MC-10",
+    "title": "Zero depreciation add-on",
+    "text": "The zero depreciation add-on waives depreciation on metal and plastic parts for a car not older than 5 years. It applies only to the first two partial-loss claims in a policy year. The tyre-only exclusion is unchanged by this add-on.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-11",
+    "clause_id": "MC-11",
+    "title": "Engine protect add-on",
+    "text": "The engine protect add-on covers repair or replacement of the engine, gearbox, and differential when the damage is caused by water ingression, including hydrostatic lock, or by leakage of lubricating oil. Normal wear is not covered under this add-on.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  },
+  {
+    "chunk_id": "MC-12",
+    "clause_id": "MC-12",
+    "title": "Key protect add-on",
+    "text": "The key-protect add-on pays up to Rs 25,000 in a policy year to replace car keys and lock sets after a break-in or after theft of the keys. Keys that were lost without a break-in or a theft are not covered.",
+    "product": "Motor",
+    "source": "motor_private_car.md"
+  }
+]

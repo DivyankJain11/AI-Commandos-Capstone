@@ -1,0 +1,1173 @@
+{
+  "n_questions": 28,
+  "vector_backend": "chromadb",
+  "retrieval": {
+    "dense": {
+      "summary": {
+        "overall": {
+          "n": 22,
+          "clause_hit_rate_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "by_tag": {
+          "heldout": {
+            "n": 16,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 4,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "pii": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "reasoning": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          }
+        }
+      },
+      "details": [
+        {
+          "id": "f01",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-03",
+            "CL-01"
+          ],
+          "dense_score": 0.663,
+          "rerank_score": null
+        },
+        {
+          "id": "f02",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-03",
+            "HP-04"
+          ],
+          "dense_score": 0.5908,
+          "rerank_score": null
+        },
+        {
+          "id": "f03",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-03",
+            "HP-04",
+            "HP-02"
+          ],
+          "dense_score": 0.7579,
+          "rerank_score": null
+        },
+        {
+          "id": "f04",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-04",
+            "HP-03",
+            "HP-02"
+          ],
+          "dense_score": 0.8052,
+          "rerank_score": null
+        },
+        {
+          "id": "f05",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-06",
+            "HP-07",
+            "HP-01"
+          ],
+          "dense_score": 0.8109,
+          "rerank_score": null
+        },
+        {
+          "id": "f06",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-07",
+            "HP-04",
+            "HP-02"
+          ],
+          "dense_score": 0.7476,
+          "rerank_score": null
+        },
+        {
+          "id": "f07",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-08",
+            "HP-02",
+            "HP-01"
+          ],
+          "dense_score": 0.6698,
+          "rerank_score": null
+        },
+        {
+          "id": "f08",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "HP-06"
+          ],
+          "dense_score": 0.6646,
+          "rerank_score": null
+        },
+        {
+          "id": "f09",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-02",
+            "EX-04",
+            "HP-04"
+          ],
+          "dense_score": 0.647,
+          "rerank_score": null
+        },
+        {
+          "id": "f10",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "HP-11",
+            "HP-04"
+          ],
+          "dense_score": 0.6654,
+          "rerank_score": null
+        },
+        {
+          "id": "f11",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-04",
+            "EX-02",
+            "HP-11"
+          ],
+          "dense_score": 0.7278,
+          "rerank_score": null
+        },
+        {
+          "id": "f12",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "HP-05",
+            "CL-08"
+          ],
+          "dense_score": 0.7192,
+          "rerank_score": null
+        },
+        {
+          "id": "f13",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "HP-05",
+            "MC-10"
+          ],
+          "dense_score": 0.6213,
+          "rerank_score": null
+        },
+        {
+          "id": "f14",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-08",
+            "MC-01",
+            "MC-10"
+          ],
+          "dense_score": 0.8882,
+          "rerank_score": null
+        },
+        {
+          "id": "f15",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-12",
+            "MC-09"
+          ],
+          "dense_score": 0.6984,
+          "rerank_score": null
+        },
+        {
+          "id": "f16",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-01",
+            "MC-12"
+          ],
+          "dense_score": 0.4913,
+          "rerank_score": null
+        },
+        {
+          "id": "f17",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-01",
+            "HP-02",
+            "CL-07"
+          ],
+          "dense_score": 0.4384,
+          "rerank_score": null
+        },
+        {
+          "id": "f18",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-03",
+            "HP-02",
+            "CL-02"
+          ],
+          "dense_score": 0.8206,
+          "rerank_score": null
+        },
+        {
+          "id": "f19",
+          "tag": "reasoning",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-05",
+            "MC-04",
+            "HP-02"
+          ],
+          "dense_score": 0.782,
+          "rerank_score": null
+        },
+        {
+          "id": "f20",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-07",
+            "MC-10",
+            "MC-06"
+          ],
+          "dense_score": 0.6771,
+          "rerank_score": null
+        },
+        {
+          "id": "f21",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "MC-01",
+            "HP-02"
+          ],
+          "dense_score": 0.4937,
+          "rerank_score": null
+        },
+        {
+          "id": "p01",
+          "tag": "pii",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "CL-04"
+          ],
+          "dense_score": 0.5326,
+          "rerank_score": null
+        },
+        {
+          "id": "r01",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.125,
+          "rerank_score": null,
+          "top_clause": "MC-06"
+        },
+        {
+          "id": "r02",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.189,
+          "rerank_score": null,
+          "top_clause": "EX-04"
+        },
+        {
+          "id": "r03",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.0959,
+          "rerank_score": null,
+          "top_clause": "EX-05"
+        },
+        {
+          "id": "r04",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.5153,
+          "rerank_score": null,
+          "top_clause": "CL-03"
+        },
+        {
+          "id": "r05",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.2668,
+          "rerank_score": null,
+          "top_clause": "HP-01"
+        },
+        {
+          "id": "r06",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.092,
+          "rerank_score": null,
+          "top_clause": "HP-12"
+        }
+      ]
+    },
+    "hybrid": {
+      "summary": {
+        "overall": {
+          "n": 22,
+          "clause_hit_rate_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "by_tag": {
+          "heldout": {
+            "n": 16,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 4,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "pii": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "reasoning": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          }
+        }
+      },
+      "details": [
+        {
+          "id": "f01",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-04",
+            "HP-03"
+          ],
+          "dense_score": 0.663,
+          "rerank_score": null
+        },
+        {
+          "id": "f02",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-04",
+            "HP-01"
+          ],
+          "dense_score": 0.5908,
+          "rerank_score": null
+        },
+        {
+          "id": "f03",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-03",
+            "HP-04",
+            "HP-02"
+          ],
+          "dense_score": 0.7579,
+          "rerank_score": null
+        },
+        {
+          "id": "f04",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-04",
+            "HP-03",
+            "HP-02"
+          ],
+          "dense_score": 0.8052,
+          "rerank_score": null
+        },
+        {
+          "id": "f05",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-06",
+            "HP-07",
+            "HP-01"
+          ],
+          "dense_score": 0.8109,
+          "rerank_score": null
+        },
+        {
+          "id": "f06",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-07",
+            "HP-11",
+            "CL-01"
+          ],
+          "dense_score": 0.7476,
+          "rerank_score": null
+        },
+        {
+          "id": "f07",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-08",
+            "HP-02",
+            "HP-05"
+          ],
+          "dense_score": 0.6698,
+          "rerank_score": null
+        },
+        {
+          "id": "f08",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "HP-01"
+          ],
+          "dense_score": 0.6646,
+          "rerank_score": null
+        },
+        {
+          "id": "f09",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-02",
+            "EX-04",
+            "HP-12"
+          ],
+          "dense_score": 0.647,
+          "rerank_score": null
+        },
+        {
+          "id": "f10",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "HP-10",
+            "HP-12"
+          ],
+          "dense_score": 0.6654,
+          "rerank_score": null
+        },
+        {
+          "id": "f11",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-04",
+            "EX-02",
+            "HP-11"
+          ],
+          "dense_score": 0.7278,
+          "rerank_score": null
+        },
+        {
+          "id": "f12",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "MC-04",
+            "HP-05"
+          ],
+          "dense_score": 0.7192,
+          "rerank_score": null
+        },
+        {
+          "id": "f13",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "HP-05",
+            "MC-03"
+          ],
+          "dense_score": 0.6213,
+          "rerank_score": null
+        },
+        {
+          "id": "f14",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-08",
+            "MC-10",
+            "MC-07"
+          ],
+          "dense_score": 0.8882,
+          "rerank_score": null
+        },
+        {
+          "id": "f15",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-12",
+            "MC-09"
+          ],
+          "dense_score": 0.6984,
+          "rerank_score": null
+        },
+        {
+          "id": "f16",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-12",
+            "MC-01"
+          ],
+          "dense_score": 0.4913,
+          "rerank_score": null
+        },
+        {
+          "id": "f17",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-01",
+            "CL-07",
+            "HP-07"
+          ],
+          "dense_score": 0.4384,
+          "rerank_score": null
+        },
+        {
+          "id": "f18",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-03",
+            "MC-03",
+            "CL-08"
+          ],
+          "dense_score": 0.8206,
+          "rerank_score": null
+        },
+        {
+          "id": "f19",
+          "tag": "reasoning",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-05",
+            "HP-01",
+            "HP-02"
+          ],
+          "dense_score": 0.782,
+          "rerank_score": null
+        },
+        {
+          "id": "f20",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-07",
+            "MC-10",
+            "MC-06"
+          ],
+          "dense_score": 0.6771,
+          "rerank_score": null
+        },
+        {
+          "id": "f21",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "MC-08",
+            "HP-02"
+          ],
+          "dense_score": 0.4937,
+          "rerank_score": null
+        },
+        {
+          "id": "p01",
+          "tag": "pii",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "CL-02"
+          ],
+          "dense_score": 0.5326,
+          "rerank_score": null
+        },
+        {
+          "id": "r01",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.0444,
+          "rerank_score": null,
+          "top_clause": "MC-12"
+        },
+        {
+          "id": "r02",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.1728,
+          "rerank_score": null,
+          "top_clause": "HP-04"
+        },
+        {
+          "id": "r03",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.011,
+          "rerank_score": null,
+          "top_clause": "CL-03"
+        },
+        {
+          "id": "r04",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.5153,
+          "rerank_score": null,
+          "top_clause": "CL-03"
+        },
+        {
+          "id": "r05",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.2208,
+          "rerank_score": null,
+          "top_clause": "MC-05"
+        },
+        {
+          "id": "r06",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": -0.0077,
+          "rerank_score": null,
+          "top_clause": "HP-01"
+        }
+      ]
+    },
+    "advanced": {
+      "summary": {
+        "overall": {
+          "n": 22,
+          "clause_hit_rate_at_3": 1.0,
+          "mrr": 1.0
+        },
+        "by_tag": {
+          "heldout": {
+            "n": 16,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "paraphrase": {
+            "n": 4,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "pii": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          },
+          "reasoning": {
+            "n": 1,
+            "clause_hit_rate_at_3": 1.0,
+            "mrr": 1.0
+          }
+        }
+      },
+      "details": [
+        {
+          "id": "f01",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-04",
+            "CL-01"
+          ],
+          "dense_score": 0.663,
+          "rerank_score": 5.8575
+        },
+        {
+          "id": "f02",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-02",
+            "HP-03",
+            "HP-04"
+          ],
+          "dense_score": 0.5908,
+          "rerank_score": 1.9027
+        },
+        {
+          "id": "f03",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-03",
+            "HP-04",
+            "HP-02"
+          ],
+          "dense_score": 0.7579,
+          "rerank_score": 7.1387
+        },
+        {
+          "id": "f04",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-04",
+            "HP-03",
+            "HP-02"
+          ],
+          "dense_score": 0.8052,
+          "rerank_score": 9.6412
+        },
+        {
+          "id": "f05",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-06",
+            "HP-08",
+            "HP-07"
+          ],
+          "dense_score": 0.8109,
+          "rerank_score": 7.3259
+        },
+        {
+          "id": "f06",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-07",
+            "CL-01",
+            "HP-04"
+          ],
+          "dense_score": 0.7476,
+          "rerank_score": 8.7818
+        },
+        {
+          "id": "f07",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-08",
+            "HP-02",
+            "HP-04"
+          ],
+          "dense_score": 0.6698,
+          "rerank_score": 7.3403
+        },
+        {
+          "id": "f08",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "HP-11"
+          ],
+          "dense_score": 0.6646,
+          "rerank_score": 8.0644
+        },
+        {
+          "id": "f09",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-02",
+            "HP-12",
+            "HP-11"
+          ],
+          "dense_score": 0.647,
+          "rerank_score": 2.0248
+        },
+        {
+          "id": "f10",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "HP-12",
+            "HP-11"
+          ],
+          "dense_score": 0.6654,
+          "rerank_score": 5.3
+        },
+        {
+          "id": "f11",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-04",
+            "HP-12",
+            "HP-11"
+          ],
+          "dense_score": 0.7278,
+          "rerank_score": 4.3954
+        },
+        {
+          "id": "f12",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "CL-03",
+            "MC-10"
+          ],
+          "dense_score": 0.7192,
+          "rerank_score": 8.1611
+        },
+        {
+          "id": "f13",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-05",
+            "MC-03",
+            "HP-05"
+          ],
+          "dense_score": 0.6213,
+          "rerank_score": 7.1833
+        },
+        {
+          "id": "f14",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-08",
+            "MC-01",
+            "MC-10"
+          ],
+          "dense_score": 0.8882,
+          "rerank_score": 8.3934
+        },
+        {
+          "id": "f15",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-12",
+            "MC-09"
+          ],
+          "dense_score": 0.6984,
+          "rerank_score": 9.5829
+        },
+        {
+          "id": "f16",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-11",
+            "MC-12",
+            "MC-09"
+          ],
+          "dense_score": 0.4913,
+          "rerank_score": 3.035
+        },
+        {
+          "id": "f17",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-01",
+            "CL-05",
+            "HP-07"
+          ],
+          "dense_score": 0.4384,
+          "rerank_score": 5.7303
+        },
+        {
+          "id": "f18",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "CL-03",
+            "CL-05",
+            "CL-02"
+          ],
+          "dense_score": 0.8206,
+          "rerank_score": 10.6078
+        },
+        {
+          "id": "f19",
+          "tag": "reasoning",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-05",
+            "HP-11",
+            "HP-01"
+          ],
+          "dense_score": 0.782,
+          "rerank_score": 6.0014
+        },
+        {
+          "id": "f20",
+          "tag": "heldout",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "MC-07",
+            "MC-10",
+            "MC-06"
+          ],
+          "dense_score": 0.6771,
+          "rerank_score": 5.6135
+        },
+        {
+          "id": "f21",
+          "tag": "paraphrase",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "EX-03",
+            "MC-08",
+            "HP-02"
+          ],
+          "dense_score": 0.4937,
+          "rerank_score": 0.204
+        },
+        {
+          "id": "p01",
+          "tag": "pii",
+          "scored": true,
+          "hit": 1,
+          "mrr": 1.0,
+          "found": [
+            "HP-09",
+            "MC-04",
+            "HP-01"
+          ],
+          "dense_score": 0.5326,
+          "rerank_score": -3.8217
+        },
+        {
+          "id": "r01",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.1182,
+          "rerank_score": -11.1924,
+          "top_clause": "MC-05"
+        },
+        {
+          "id": "r02",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.1728,
+          "rerank_score": -11.0078,
+          "top_clause": "HP-04"
+        },
+        {
+          "id": "r03",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.0709,
+          "rerank_score": -10.8965,
+          "top_clause": "CL-01"
+        },
+        {
+          "id": "r04",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.5153,
+          "rerank_score": -1.551,
+          "top_clause": "CL-03"
+        },
+        {
+          "id": "r05",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.1377,
+          "rerank_score": -10.9399,
+          "top_clause": "MC-12"
+        },
+        {
+          "id": "r06",
+          "tag": "refusal",
+          "scored": false,
+          "dense_score": 0.0013,
+          "rerank_score": -11.097,
+          "top_clause": "CL-01"
+        }
+      ]
+    }
+  }
+}
