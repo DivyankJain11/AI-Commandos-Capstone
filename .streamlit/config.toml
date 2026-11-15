@@ -1,6 +1,14 @@
 [browser]
 gatherUsageStats = false
 
+[theme]
+base = "light"
+primaryColor = "#2e5b46"
+backgroundColor = "#f6f7f3"
+secondaryBackgroundColor = "#eef1eb"
+textColor = "#1d2924"
+font = "sans serif"
+
 [server]
 fileWatcherType = "none"
 address = "127.0.0.1"
