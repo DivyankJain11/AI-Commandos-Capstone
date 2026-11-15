@@ -13,21 +13,24 @@ EXAMPLES = [
 PAGE_STYLES = """
 <style>
 :root {
-  --ink: #1d2924;
-  --muted: #6f7b74;
-  --green: #2e5b46;
-  --line: rgba(43, 66, 54, 0.11);
+  --ink: #edf2ed;
+  --muted: #a4b0a7;
+  --accent: #b4d2b5;
+  --line: rgba(201, 222, 204, 0.13);
+  --surface: rgba(24, 34, 28, 0.82);
+  --surface-soft: rgba(21, 30, 24, 0.72);
+  --border: rgba(201, 222, 204, 0.15);
 }
 
 .stApp {
   background:
-    radial-gradient(ellipse at 92% 3%, rgba(206, 225, 209, 0.52), transparent 32%),
-    radial-gradient(ellipse at 4% 19%, rgba(247, 229, 208, 0.48), transparent 29%),
-    #f6f7f3;
+    radial-gradient(ellipse at 88% 0%, rgba(65, 105, 75, 0.2), transparent 34%),
+    radial-gradient(ellipse at 5% 22%, rgba(87, 71, 48, 0.12), transparent 30%),
+    #0d1410;
   color: var(--ink);
 }
 [data-testid="stHeader"] {
-  background: rgba(246, 247, 243, 0.62);
+  background: rgba(13, 20, 16, 0.76);
   backdrop-filter: blur(16px);
 }
 [data-testid="stMain"] {
@@ -39,7 +42,8 @@ PAGE_STYLES = """
   padding-bottom: 5rem;
 }
 body, [data-testid="stAppViewContainer"] {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  font-family: "Inter", "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
 }
 
 .brand-row {
@@ -60,19 +64,19 @@ body, [data-testid="stAppViewContainer"] {
   height: 2.45rem;
   place-items: center;
   border-radius: 0.85rem;
-  background: #254a39;
-  color: #f7f8f3;
-  font: 500 1.15rem/1 "Iowan Old Style", Georgia, serif;
+  background: #a8c6a9;
+  color: #142017;
+  font: 700 1.1rem/1 "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 .brand-name {
-  color: #26342d;
+  color: #edf2ed;
   font-size: 0.9rem;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: 0.01em;
 }
 .brand-subtitle {
   margin-top: 0.12rem;
-  color: var(--muted);
+  color: #9caaa0;
   font-size: 0.68rem;
   letter-spacing: 0.11em;
   text-transform: uppercase;
@@ -82,136 +86,202 @@ body, [data-testid="stAppViewContainer"] {
   align-items: center;
   gap: 0.48rem;
   padding: 0.5rem 0.78rem;
-  border: 1px solid rgba(46, 91, 70, 0.13);
+  border: 1px solid var(--border);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.5);
-  color: #52665a;
+  background: rgba(25, 36, 29, 0.72);
+  color: #c0cec2;
   font-size: 0.75rem;
 }
 .local-dot {
   width: 0.42rem;
   height: 0.42rem;
   border-radius: 50%;
-  background: #5a956e;
-  box-shadow: 0 0 0 3px rgba(90, 149, 110, 0.12);
+  background: #9ac69d;
+  box-shadow: 0 0 0 3px rgba(154, 198, 157, 0.13);
 }
 
 .hero {
-  max-width: 760px;
+  position: relative;
+  min-height: 340px;
   padding: 3.2rem 0 2rem;
 }
+.hero-copy-column {
+  position: relative;
+  z-index: 1;
+  max-width: 660px;
+}
 .eyebrow, .section-kicker {
-  color: #718076;
+  color: #9eafa2;
   font-size: 0.69rem;
-  font-weight: 650;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 .hero h1 {
   margin: 0.9rem 0 0.85rem;
-  color: #20342a;
-  font: 400 clamp(2.5rem, 5vw, 4.1rem)/1.07 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  letter-spacing: -0.045em;
+  color: #f1f4ef;
+  font: 700 clamp(2.45rem, 5vw, 3.9rem)/1.08 "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.055em;
 }
 .hero h1 em {
-  color: #54715c;
-  font-weight: 400;
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 600;
 }
 .hero-copy {
   max-width: 570px;
   margin: 0;
-  color: #69756e;
+  color: #b3beb5;
   font-size: 1.04rem;
   line-height: 1.7;
 }
 .demo-note {
   margin-top: 1rem;
-  color: #7b847e;
+  color: #89978d;
   font-size: 0.78rem;
   line-height: 1.6;
 }
+.hero-art {
+  position: absolute;
+  inset: -1rem -3rem -1rem 30%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.72;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 25%, #000 82%, transparent 100%);
+}
+.hero-art svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.line-mesh {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: mesh-drift 18s ease-in-out infinite alternate;
+}
+.contour {
+  fill: none;
+  stroke: rgba(164, 204, 167, 0.2);
+  stroke-width: 1;
+}
+.contour-highlight {
+  fill: none;
+  stroke: url(#contour-light);
+  stroke-linecap: round;
+  stroke-width: 1.5;
+  stroke-dasharray: 105 1120;
+  animation: line-travel 18s linear infinite;
+}
+.contour-highlight--slow {
+  stroke-dasharray: 72 1120;
+  animation-duration: 27s;
+  animation-direction: reverse;
+}
+.contour-glow {
+  fill: none;
+  stroke: rgba(156, 207, 159, 0.16);
+  stroke-linecap: round;
+  stroke-width: 5;
+  stroke-dasharray: 105 1120;
+  filter: blur(4px);
+  animation: line-travel 18s linear infinite;
+}
+@keyframes mesh-drift {
+  from { transform: translate3d(-1.5%, 1%, 0) rotateY(-8deg) rotateX(2deg); }
+  to { transform: translate3d(1.5%, -1%, 0) rotateY(5deg) rotateX(-2deg); }
+}
+@keyframes line-travel {
+  to { stroke-dashoffset: -1225; }
+}
 
 [data-testid="stVerticalBlockBorderWrapper"] {
-  border: 1px solid rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--border);
   border-radius: 1.45rem;
-  background: rgba(255, 255, 255, 0.59);
-  box-shadow: 0 18px 55px rgba(42, 59, 48, 0.065), 0 2px 8px rgba(42, 59, 48, 0.035);
-  backdrop-filter: blur(22px);
+  background: var(--surface);
+  box-shadow: 0 22px 65px rgba(0, 0, 0, 0.2), 0 2px 10px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(24px);
 }
 .question-heading {
   margin: 0.15rem 0 0.3rem;
-  color: #26372e;
-  font: 400 1.55rem/1.25 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  letter-spacing: -0.02em;
+  color: #eef3ee;
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 .question-help {
   margin: 0 0 1.15rem;
-  color: #77827a;
+  color: #a3afa6;
   font-size: 0.88rem;
   line-height: 1.55;
 }
 [data-testid="stTextArea"] label,
 [data-testid="stSelectbox"] label {
-  color: #55655b;
+  color: #c4cec5;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 650;
 }
 [data-testid="stTextArea"] textarea {
   min-height: 7rem;
-  border: 1px solid rgba(55, 79, 63, 0.16) !important;
+  border: 1px solid rgba(187, 211, 191, 0.2) !important;
   border-radius: 1rem !important;
-  background: rgba(255, 255, 255, 0.78) !important;
-  color: #26342d !important;
+  background: rgba(13, 20, 16, 0.76) !important;
+  color: #edf2ed !important;
   font-size: 0.98rem;
   line-height: 1.6;
   transition: border-color 160ms ease, box-shadow 160ms ease;
 }
 [data-testid="stTextArea"] textarea::placeholder {
-  color: #8a948d !important;
+  color: #85938a !important;
   opacity: 1;
 }
 [data-testid="stTextArea"] textarea:focus {
-  border-color: rgba(46, 91, 70, 0.62) !important;
-  box-shadow: 0 0 0 3px rgba(46, 91, 70, 0.1) !important;
+  border-color: rgba(166, 203, 169, 0.72) !important;
+  box-shadow: 0 0 0 3px rgba(166, 203, 169, 0.13) !important;
 }
 [data-testid="stSelectbox"] [data-baseweb="select"] > div {
-  border-color: rgba(55, 79, 63, 0.15) !important;
+  border-color: rgba(187, 211, 191, 0.2) !important;
   border-radius: 0.8rem !important;
-  background: rgba(255, 255, 255, 0.78) !important;
-  color: #26342d !important;
+  background: rgba(13, 20, 16, 0.76) !important;
+  color: #edf2ed !important;
+}
+[data-testid="stSelectbox"] [role="combobox"] {
+  color: #edf2ed !important;
 }
 [data-testid="stBaseButton-primary"] {
   min-height: 2.85rem;
   padding: 0.15rem 1.25rem;
-  border: 1px solid #254a39;
+  border: 1px solid #a8c6a9;
   border-radius: 999px;
-  background: #254a39;
-  color: #fff;
-  font-weight: 600;
+  background: #a8c6a9;
+  color: #142017;
+  font-weight: 700;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 [data-testid="stBaseButton-primary"]:hover {
-  border-color: #315b45;
-  background: #315b45;
-  box-shadow: 0 7px 18px rgba(37, 74, 57, 0.17);
+  border-color: #c2dbc2;
+  background: #c2dbc2;
+  box-shadow: 0 7px 20px rgba(137, 183, 142, 0.19);
   transform: translateY(-1px);
 }
 [data-testid="stAlert"] {
+  border: 1px solid var(--border);
   border-radius: 1rem;
+  background: rgba(34, 45, 37, 0.86);
 }
 [data-testid="stExpander"] {
   overflow: hidden;
-  border: 1px solid rgba(48, 72, 57, 0.1);
+  border: 1px solid rgba(201, 222, 204, 0.13);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.48);
+  background: var(--surface-soft);
 }
 [data-testid="stExpander"] summary p {
-  color: #34483b;
+  color: #e3ebe3;
   font-size: 0.9rem;
-  font-weight: 550;
+  font-weight: 650;
 }
 [data-testid="stCaptionContainer"] {
-  color: #78837b;
+  color: #9ba99f;
 }
 
 .answer-heading {
@@ -223,50 +293,57 @@ body, [data-testid="stAppViewContainer"] {
 }
 .answer-title {
   margin: 0;
-  color: #26372e;
-  font: 400 1.5rem/1.25 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  color: #f0f4ef;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 .grounded-badge {
   padding: 0.4rem 0.7rem;
-  border: 1px solid rgba(46, 91, 70, 0.13);
+  border: 1px solid rgba(169, 204, 172, 0.24);
   border-radius: 999px;
-  background: rgba(235, 243, 235, 0.8);
-  color: #496650;
+  background: rgba(114, 157, 119, 0.15);
+  color: #c1ddc2;
   font-size: 0.72rem;
+  font-weight: 650;
   white-space: nowrap;
 }
 .source-intro {
   margin: -0.25rem 0 1rem;
-  color: #77827a;
+  color: #a3afa6;
   font-size: 0.87rem;
   line-height: 1.55;
 }
 .source-title {
   margin: 0.2rem 0 0.35rem;
-  color: #26372e;
-  font: 400 1.65rem/1.25 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  color: #edf2ed;
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 
 section[data-testid="stSidebar"] {
-  border-right: 1px solid rgba(43, 66, 54, 0.09);
-  background: rgba(244, 246, 241, 0.82);
-  backdrop-filter: blur(22px);
+  border-right: 1px solid rgba(201, 222, 204, 0.1);
+  background: rgba(14, 21, 17, 0.94);
+  backdrop-filter: blur(24px);
 }
 section[data-testid="stSidebar"] h2 {
-  color: #26372e;
-  font: 400 1.5rem/1.25 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  color: #edf2ed;
+  font-size: 1.42rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
 section[data-testid="stSidebar"] [data-testid="stRadio"] label p {
-  color: #43544a;
+  color: #d3ddd4;
   font-size: 0.84rem;
 }
 .sidebar-note {
   margin-top: 1rem;
   padding: 0.9rem 1rem;
-  border: 1px solid rgba(46, 91, 70, 0.1);
+  border: 1px solid rgba(201, 222, 204, 0.13);
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.55);
-  color: #68766d;
+  background: rgba(27, 38, 31, 0.78);
+  color: #aeb9b0;
   font-size: 0.78rem;
   line-height: 1.6;
 }
@@ -276,7 +353,13 @@ section[data-testid="stSidebar"] [data-testid="stRadio"] label p {
     padding: 3rem 1rem 3rem;
   }
   .hero {
+    min-height: 340px;
     padding: 2.3rem 0 1.5rem;
+  }
+  .hero-art {
+    inset: 0 -1rem 0 4%;
+    opacity: 0.42;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 36%, #000 100%);
   }
   .local-badge {
     padding: 0.42rem 0.58rem;
@@ -285,6 +368,13 @@ section[data-testid="stSidebar"] [data-testid="stRadio"] label p {
   .answer-heading {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .line-mesh,
+  .contour-highlight,
+  .contour-glow {
+    animation: none !important;
   }
 }
 </style>
@@ -314,13 +404,36 @@ def main() -> None:
           <div class="local-badge"><span class="local-dot"></span>Private demo · local wording</div>
         </div>
         <section class="hero">
-          <div class="eyebrow">PolicyGuard · a little more clarity</div>
-          <h1>Good answers begin<br>with <em>the wording.</em></h1>
-          <p class="hero-copy">
-            Get a thoughtful first read of a policy question, with the clause beside the draft
-            so you can check the details for yourself.
-          </p>
-          <p class="demo-note">{DISCLAIMER}</p>
+          <div class="hero-copy-column">
+            <div class="eyebrow">PolicyGuard · a little more clarity</div>
+            <h1>Good answers begin<br>with <em>the wording.</em></h1>
+            <p class="hero-copy">
+              Get a thoughtful first read of a policy question, with the clause beside the draft
+              so you can check the details for yourself.
+            </p>
+            <p class="demo-note">{DISCLAIMER}</p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg viewBox="0 0 760 360" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="contour-light" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#a8c6a9" stop-opacity="0"></stop>
+                  <stop offset="0.48" stop-color="#d8efd1" stop-opacity="0.92"></stop>
+                  <stop offset="1" stop-color="#a8c6a9" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+              <g class="line-mesh">
+                <path class="contour" d="M-50 250 C90 28 190 44 300 142 S500 294 810 74"></path>
+                <path class="contour" d="M-55 274 C93 54 196 70 306 168 S507 320 815 99"></path>
+                <path class="contour" d="M-60 298 C96 80 202 96 312 194 S513 344 820 124"></path>
+                <path class="contour" d="M-30 98 C130 260 231 280 354 170 S556 34 790 230"></path>
+                <path class="contour" d="M-35 122 C132 284 236 304 359 194 S561 58 795 254"></path>
+                <path class="contour-glow" d="M-50 250 C90 28 190 44 300 142 S500 294 810 74"></path>
+                <path class="contour-highlight" d="M-50 250 C90 28 190 44 300 142 S500 294 810 74"></path>
+                <path class="contour-highlight contour-highlight--slow" d="M-30 98 C130 260 231 280 354 170 S556 34 790 230"></path>
+              </g>
+            </svg>
+          </div>
         </section>
         """,
         unsafe_allow_html=True,
